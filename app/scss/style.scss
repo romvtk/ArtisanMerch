@@ -23,6 +23,64 @@ li {
 
 }
 
+.header__application_mobile {
+    width: 100%;
+    max-height: 40px;
+    display: none;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    text-align: center;
+
+    a {
+        padding-top: 6px;
+        color: #599bd1;
+        text-align: center;
+    }
+
+    .header__application-btn {
+
+        background-color: #4692ce;
+        color: #fff;
+        max-width: 100%;
+        cursor: pointer;
+
+        div {
+            padding: 7px 8px 7px 30px;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: '';
+                background: url(../img/doorbtn.png) no-repeat right center;
+                height: 25px;
+                width: 22px;
+                left: 2px;
+                top: 50%;
+                transform: translateY(-50%);
+
+
+            }
+        }
+    }
+
+    .header__application-email {
+        padding: 7px 5px 0px 40px;
+        font-size: 18px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            background: url(../img/email.png) no-repeat right center;
+            height: 22px;
+            width: 31px;
+            left: 0;
+            top: 20px;
+
+
+        }
+    }
+}
 
 .header__top {
     padding: 30px 0px;
@@ -146,7 +204,7 @@ li {
     .basket {
         display: flex;
         justify-content: space-between;
-        max-width: 170px;
+
 
         .basket__left {
             cursor: pointer;
@@ -180,13 +238,30 @@ li {
 
 nav {
     border-top: 1px solid #4991cc;
-    padding: 30px 0px;
+    padding: 23px 0px;
+
+    .header__btn-menu {
+        display: none;
+    }
 
     ul {
         display: flex;
         justify-content: space-between;
 
     }
+
+    li {
+        border: 1px solid transparent;
+        padding: 3px;;
+        transition: all 0.7s;
+
+        &:hover {
+            border-color: #4991cc;
+            border-radius: 15px;
+            background-color: rgba($color: #4692ce, $alpha: 0.3);
+        }
+    }
+
 
     a {
         text-decoration: none;
@@ -197,7 +272,7 @@ nav {
 
 }
 
-.header__serch {
+.header__search {
     display: flex;
 
 
@@ -206,10 +281,10 @@ nav {
         max-width: 890px;
         width: 100%;
         padding-left: 20px;
-        color: gray;
+
     }
 
-    .header__serch--btn {
+    .header__search--btn {
         position: relative;
         background-color: #4692ce;
         color: #fff;
@@ -229,10 +304,12 @@ nav {
 
         }
     }
-a{
-    padding: 15px 0px;
-    color: #599bd1;
-    text-decoration: none;;
-}
- 
+
+    a {
+        padding-top: 9px;
+        color: #599bd1;
+        text-decoration: none;
+        text-align: center;
+    }
+
 }
