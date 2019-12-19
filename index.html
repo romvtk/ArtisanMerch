@@ -1,34 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>ArtisanMerch</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="header__top">
                 <img src="img/logo.png" alt="logo" class="header__logo">
                 <div class="header__phone">
-                    <div class="header__phone-project"></div>
-                    <div class="header__phone-diler"></div>
-                    <span></span>
+                    <div class="header__phones">
+                        <div class="header__phone-project">
+                            <div>Проектный отдел</div>
+                            <div>+7 (499) 724 28 10</div>
+                        </div>
+                        <div class="header__phone-diler">
+                            <div>Дилерский отдел</div>
+                            <div>+7 (499) 724 28 10</div>
+                            <div>+7 (499) 989 73 93</div>
+                        </div>
+                    </div>
+                    <a href="#">Не дозвонились? Мы перезвоним!</a>
                 </div>
                 <div class="header__application">
                     <div class="header__application-btn">
-                        <span>Вход в личный кабинет</span>
+                        <div>Вход в личный кабинет</div>
                     </div>
                     <a href="#">Заявка на сотрудничество</a>
-                    <a href="#">info@artisan-project.ru</a>
+                    <a href="#" class="header__application-email">info@artisan-project.ru</a>
                 </div>
-                <div class="basket"></div>
+                <div class="basket">
+                    <div class="basket__left"></div>
+                    <div class="basket__right">
+                        <div>в вашей корзине</div>
+                        <a href="#"><b>9999</b> товаров </a>
+                       <div>на <b>9 999 999</b>р.</div>
+                    </div>
+                </div>
             </div>
-            <nav class="menu"></nav>
-            <div class="header__serch"></div>
+            <nav class="menu">
+               
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Сотрудничество</a href="#"></li>
+                        <li><a href="#">Плитка</a></li>
+                        <li><a href="#">Сантехника</a href="#"></li>
+                        <li><a href="#">Сопутствующие товары</a></li>
+                        <li><a href="#">Мерчендайзинг</a></li>
+                        <li><a href="#">Транспортные услуги</a href="#"></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+               
+            </nav>
+            <div class="header__serch">
+                <input type="text" value="Поиск по товарам, брендам, категориям..." />
+                <div class="header__serch--btn">Найти</div>
+                <a href="">Расширенный поиск</a>
+            </div>
         </div>
     </header>
 </body>
+
 </html>
